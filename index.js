@@ -1,6 +1,6 @@
 // QUESTION 1
 function convertFahrToCelsius(F) {
-  const celcius = ((F - 32) * 5) / 9;
+  const C = ((F - 32) * 5) / 9;
   if (isNaN(F)) {
     if (Array.isArray(F)) {
       return `${JSON.stringify(F)} is not a valid number but a/an array.`;
@@ -8,7 +8,7 @@ function convertFahrToCelsius(F) {
       return `${JSON.stringify(F)} is not a valid number but a/an ${typeof F}.`;
     }
   }
-  return F;
+  return C.toFixed(4);
 }
 
 // QUESTION 2

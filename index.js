@@ -15,7 +15,7 @@ function convertFahrToCelsius(F) {
 function checkYuGiOh(n) {
   const array = [];
   if (isNaN(n)) {
-    return `invalid parameter: ${n}`;
+    return `invalid parameter: ${JSON.stringify(n)}`;
   }
   for (let i = 1; i <= n; i++) {
     if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {

@@ -11,6 +11,11 @@ function convertFahrToCelsius(F) {
   return C.toFixed(4);
 }
 
+console.log(convertFahrToCelsius(0));
+console.log(convertFahrToCelsius("0"));
+console.log(convertFahrToCelsius([1, 2, 3]));
+console.log(convertFahrToCelsius({ temp: 0 }));
+
 // QUESTION 2
 function checkYuGiOh(n) {
   const array = [];
@@ -38,3 +43,6 @@ function checkYuGiOh(n) {
   }
   return array;
 }
+console.log(checkYuGiOh(10));
+console.log(checkYuGiOh("5"));
+console.log(checkYuGiOh("fizzbuzz is meh"));
